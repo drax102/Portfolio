@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Utkarsh Srivastava - AI & Full-Stack Developer Portfolio">
+<meta name="keywords" content="AI Developer, Full-Stack Developer, Python, C++, Cloud Architecture, Web Development">
+<meta name="author" content="Utkarsh Srivastava">
+<title>Utkarsh Srivastava | AI & Full-Stack Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+<!-- Masculine Black-Yellow-Red theme -->
+<meta name="theme-color" content="#ffcc00">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+
+<body>
+
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+        <div class="loading-logo">UTKARSH</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+        <div class="loading-text">INITIALIZING CYBER INTERFACE...</div>
+    </div>
+</div>
+
+<!-- Matrix Rain Background -->
+<div class="matrix-rain" id="matrixRain"></div>
+
+<!-- Interactive Particle Background -->
+<div class="particle-container" id="particleContainer"></div>
+
+<!-- Interactive Navigation Dots -->
+<div class="nav-dots">
+    <div class="nav-dot" data-section="Home" onclick="scrollToSection('hero')"></div>
+    <div class="nav-dot" data-section="About" onclick="scrollToSection('about')"></div>
+    <div class="nav-dot" data-section="Skills" onclick="scrollToSection('skills')"></div>
+    <div class="nav-dot" data-section="Projects" onclick="scrollToSection('projects')"></div>
+    <div class="nav-dot" data-section="Training" onclick="scrollToSection('training')"></div>
+    <div class="nav-dot" data-section="Certificates" onclick="scrollToSection('certificates')"></div>
+    <div class="nav-dot" data-section="Achievements" onclick="scrollToSection('achievements')"></div>
+    <div class="nav-dot" data-section="Education" onclick="scrollToSection('education')"></div>
+    <div class="nav-dot" data-section="Contact" onclick="scrollToSection('contact')"></div>
+</div>
+
+<div class="layout">
+
+<aside class="sidebar">
+    <div class="logo glitch-wrapper">
+        <h1 class="glitch" data-text="UTKARSH.">UTKARSH<span class="dot">.</span></h1>
+        <div class="status">
+            <div class="led"></div> CYBER_SYSTEM_ACTIVE
+        </div>
+    </div>
+
+    <nav>
+        <a href="#hero" class="nav-link"><span>01</span> Home</a>
+        <a href="#about" class="nav-link"><span>02</span> About</a>
+        <a href="#skills" class="nav-link"><span>03</span> Skills</a>
+        <a href="#projects" class="nav-link"><span>04</span> Projects</a>
+        <a href="#training" class="nav-link"><span>05</span> Training</a>
+        <a href="#certificates" class="nav-link"><span>06</span> Certifications</a>
+        <a href="#achievements" class="nav-link"><span>07</span> Achievements</a>
+        <a href="#education" class="nav-link"><span>08</span> Education</a>
+        <a href="#contact" class="nav-link"><span>09</span> Contact</a>
+    </nav>
+
+    <div class="footer-info">
+        <p>Loc: India</p>
+        <p>Time: <span class="time-blink"></span></p>
+    </div>
+</aside>
+
+<main class="content">
+
+<section id="hero" class="hero-section">
+    <h1 class="main-heading">Utkarsh Srivastava</h1>
+    <h2>AI & Full-Stack <br> <span class="highlight typing-text">DEVELOPER</span></h2>
+    <p class="sub-text">Building intelligent systems and scalable web applications with cutting-edge technology</p>
+    
+    <!-- Resume Download Button -->
+    <div class="hero-actions">
+        <a href="#" class="cta-btn resume-btn" id="resumeBtn">
+            <i class="fas fa-download"></i>
+            <span>Download Resume</span>
+        </a>
+        <a href="#contact" class="cta-btn secondary-btn">
+            <i class="fas fa-envelope"></i>
+            <span>Contact Me</span>
+        </a>
+    </div>
+    
+    <!-- Quick Links -->
+    <div class="quick-links">
+        <a href="https://www.linkedin.com/in/utkarsh-srivastava-3a0778282/" target="_blank" class="quick-link floating-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/drax102" target="_blank" class="quick-link floating-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:utkarsh48lpu@gmail.com" class="quick-link floating-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+917667479746" class="quick-link floating-icon">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h3 class="section-title">ABOUT_SYSTEM</h3>
+    <div class="about-content">
+        <div class="about-image">
+            <img src="draxpic.png.jpeg" alt="Utkarsh Profile" id="profileImage" style="cursor: pointer;">
+        </div>
+        <div class="about-text">
+            <h3>AI & Full-Stack Developer</h3>
+            <p>Passionate about building intelligent systems and scalable web applications. Specializing in AI development, cloud architecture, and modern web technologies with a focus on creating innovative solutions that bridge cutting-edge technology with practical applications.</p>
+            <p>With expertise in multiple programming languages and frameworks, I transform complex requirements into elegant technical solutions that drive innovation and business growth.</p>
+            <div class="contact-info-mini">
+                <div class="contact-item-mini">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:utkarsh48lpu@gmail.com" style="color: var(--text-secondary); text-decoration: none;">utkarsh48lpu@gmail.com</a>
+                </div>
+                <div class="contact-item-mini">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+917667479746" style="color: var(--text-secondary); text-decoration: none;">+91-7667479746</a>
+                </div>
+                <div class="contact-item-mini">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/utkarsh-srivastava-3a0778282/" target="_blank" style="color: var(--text-secondary); text-decoration: none;">linkedin.com/in/utkarsh-srivastava-3a0778282</a>
+                </div>
+                <div class="contact-item-mini">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/drax102" target="_blank" style="color: var(--text-secondary); text-decoration: none;">github.com/drax102</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <h3 class="section-title">TECHNICAL_SKILLS</h3>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <div class="skill-name">Languages</div>
+            <div class="skill-level">C++, C, Python, Java</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="skill-name">Frameworks</div>
+            <div class="skill-level">HTML5, CSS3, Node.js, React.js, Express.js, REST APIs</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+            <div class="skill-name">Tools & Platforms</div>
+            <div class="skill-level">MySQL, VS Code, Git & GitHub, Linux, Apache, AWS Cloud Console, Figma, cPanel</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <div class="skill-name">AI & Automation</div>
+            <div class="skill-level">Speech Recognition, OS Automation, Browser Automation, NLP</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-users"></i></div>
+            <div class="skill-name">Soft Skills</div>
+            <div class="skill-level">Analytical Problem-Solving, Team Collaboration, Technical Communication</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+            <div class="skill-name">Cloud & Database</div>
+            <div class="skill-level">AWS, Oracle Cloud, MySQL, Data Structures & Algorithms</div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 87%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certificates" class="section">
+    <h3 class="section-title">CERTIFICATIONS</h3>
+    <div class="certificates-grid">
+        <div class="certificate-card">
+            <div class="certificate-icon"><i class="fas fa-cloud"></i></div>
+            <div class="certificate-name">Cloud Architecting - Training Badge</div>
+            <div class="certificate-issuer">AWS</div>
+            <div class="certificate-date">Jan' 26</div>
+            <div class="certificate-badge">AWS</div>
+        </div>
+        <div class="certificate-card">
+            <div class="certificate-icon"><i class="fas fa-server"></i></div>
+            <div class="certificate-name">Cloud Infrastructure 2025 Certified Foundations Associate</div>
+            <div class="certificate-issuer">Oracle</div>
+            <div class="certificate-date">Oct' 25</div>
+            <div class="certificate-badge">ORACLE</div>
+        </div>
+        <div class="certificate-card">
+            <div class="certificate-icon"><i class="fas fa-brain"></i></div>
+            <div class="certificate-name">Cloud Infrastructure 2025 Certified AI Foundations Associate</div>
+            <div class="certificate-issuer">Oracle</div>
+            <div class="certificate-date">Oct' 25</div>
+            <div class="certificate-badge">ORACLE AI</div>
+        </div>
+        <div class="certificate-card">
+            <div class="certificate-icon"><i class="fas fa-database"></i></div>
+            <div class="certificate-name">Data Platform 2025 Certified Foundations Associate</div>
+            <div class="certificate-issuer">Oracle</div>
+            <div class="certificate-date">Oct' 25</div>
+            <div class="certificate-badge">ORACLE DATA</div>
+        </div>
+        <div class="certificate-card">
+            <div class="certificate-icon"><i class="fas fa-code"></i></div>
+            <div class="certificate-name">Basics of DSA using CPP</div>
+            <div class="certificate-issuer">IamNeo</div>
+            <div class="certificate-date">Jul' 25</div>
+            <div class="certificate-badge">DSA</div>
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="section">
+    <h3 class="section-title">ACHIEVEMENTS</h3>
+    <div class="achievements-grid">
+        <div class="achievement-card">
+            <div class="achievement-icon"><i class="fas fa-star"></i></div>
+            <div class="achievement-name">5-Star Python Rating</div>
+            <div class="achievement-platform">HackerRank</div>
+            <div class="achievement-date">Oct' 25</div>
+            <div class="achievement-description">Advanced proficiency in data structures, algorithms, and competitive programming</div>
+        </div>
+        <div class="achievement-card">
+            <div class="achievement-icon"><i class="fas fa-star"></i></div>
+            <div class="achievement-name">5-Star C++ Rating</div>
+            <div class="achievement-platform">HackerRank</div>
+            <div class="achievement-date">Oct' 25</div>
+            <div class="achievement-description">Advanced proficiency in data structures, algorithms, and competitive programming</div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <h3 class="section-title">EDUCATION</h3>
+    <div class="education-grid">
+        <div class="education-card">
+            <div class="education-icon"><i class="fas fa-university"></i></div>
+            <div class="education-name">Bachelor of Technology - Computer Science and Engineering</div>
+            <div class="education-school">Lovely Professional University</div>
+            <div class="education-location">Punjab, India</div>
+            <div class="education-date">Aug' 23 - Present</div>
+            <div class="education-grade">CGPA: 6.8</div>
+        </div>
+        <div class="education-card">
+            <div class="education-icon"><i class="fas fa-school"></i></div>
+            <div class="education-name">Intermediate</div>
+            <div class="education-school">Pragya Niketan</div>
+            <div class="education-location">Sasaram, Rohtas</div>
+            <div class="education-date">Apr' 22 – Mar' 23</div>
+            <div class="education-grade">Percentage: 65%</div>
+        </div>
+        <div class="education-card">
+            <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="education-name">Matriculation</div>
+            <div class="education-school">D.A.V Public School</div>
+            <div class="education-location">Patna, Bihar</div>
+            <div class="education-date">Apr' 19 – Mar' 20</div>
+            <div class="education-grade">Percentage: 78%</div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h3 class="section-title">FEATURED_PROJECTS</h3>
+
+    <div class="project-item">
+        <h2>AmmoNation – Global Firearms Classification & History Website</h2>
+        <p><strong>Jan' 26 - Ongoing</strong></p>
+        <p>Developed an interactive educational website presenting global firearms data using HTML, CSS, Bootstrap, and advanced CSS animations. Implemented responsive layouts, hover-based 3D card interactions, and animated navigation to enhance usability and visual engagement. Demonstrated strong frontend design skills through structured content presentation, reusable components, and modern UI/UX practices.</p>
+        <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap</span>
+        </div>
+        <div style="margin-top: 1rem;">
+            <a href="https://github.com/drax102/DRAX-AMMONATION" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+            </a>
+        </div>
+        <img src="ammonationpic.png"
+        alt="AmmoNation Project"
+        class="responsive-img">
+    </div>
+
+    <div class="project-item">
+        <h2>AI Assistant Developer</h2>
+        <p><strong>Jun' 25 - Ongoing</strong></p>
+        <p>Engineered an intelligent voice- and text-controlled assistant enabling hands-free system navigation, including application launching, system tool access, and website execution through natural language commands. Built backend automation using Python and PHP to process natural-language inputs, validate and resolve URLs, and securely execute system and browser actions via a modular, extensible command framework. Deployed a fast, extensible, and customizable AI-powered productivity assistant that reliably executed voice and text commands, enhancing usability and automation efficiency.</p>
+        <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Flask/FastAPI</span>
+            <span class="tech-tag">SpeechRecognition</span>
+            <span class="tech-tag">OS Automation</span>
+        </div>
+        <div style="margin-top: 1rem;">
+            <a href="https://github.com/drax102/DRAX-AI" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+            </a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&q=80"
+        alt="AI Assistant Project"
+        class="responsive-img">
+    </div>
+</section>
+
+<section id="training" class="section">
+    <h3 class="section-title">PROFESSIONAL_TRAINING</h3>
+    <div class="training-grid">
+        <div class="training-card">
+            <div class="training-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="training-name">Basics of DSA using C++</div>
+            <div class="training-issuer">Lovely Professional University</div>
+            <div class="training-date">Jun' 25 – Jul' 25</div>
+            <div class="training-description">Completed 6-week structured training mastering foundational Data Structures & Algorithms using C++. Strengthened problem-solving skills through hands-on implementation and secured an 'A' grade.</div>
+            <div class="training-grade">Grade: A</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h3 class="section-title">CONTACT_PROTOCOL</h3>
+
+    <form id="contactForm" class="cyber-form">
+        <div class="form-group">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name">NAME</label>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" placeholder=" " required>
+            <label for="email">EMAIL</label>
+        </div>
+        <div class="form-group">
+            <textarea id="message" placeholder=" " required></textarea>
+            <label for="message">MESSAGE</label>
+        </div>
+        <button type="submit" class="cta-btn">
+            <span class="btn-text">TRANSMIT_</span>
+            <span class="btn-loading" style="display: none;">TRANSMITTING...</span>
+        </button>
+    </form>
+
+    <div id="formMsg" class="form-message"></div>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:utkarsh48lpu@gmail.com" style="color: var(--text-secondary); text-decoration: none;">utkarsh48lpu@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+917667479746" style="color: var(--text-secondary); text-decoration: none;">+91-7667479746</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/utkarsh-srivastava-3a0778282/" target="_blank" style="color: var(--text-secondary); text-decoration: none;">www.linkedin.com/in/utkarsh-srivastava-3a0778282</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/drax102" target="_blank" style="color: var(--text-secondary); text-decoration: none;">github.com/drax102</a>
+        </div>
+    </div>
+
+    <div class="map-wrapper">
+        <iframe 
+        src="https://www.google.com/maps?q=India&output=embed"
+        loading="lazy"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 UTKARSH | SYSTEM SECURE</p>
+    <div>
+        <a href="www.linkedin.com/in/utkarsh-srivastava-3a0778282" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/drax102" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:utkarsh48lpu@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+917667479746">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+</footer>
+
+</main>
+</div>
+
+<script>
+/* Loading Screen Animation */
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+    }, 2000);
+});
+
+/* Matrix Rain Effect */
+function createMatrixRain() {
+    const matrixContainer = document.getElementById('matrixRain');
+    const columns = Math.floor(window.innerWidth / 20);
+    
+    for (let i = 0; i < columns; i++) {
+        const column = document.createElement('div');
+        column.className = 'matrix-column';
+        column.style.left = (i * 20) + 'px';
+        column.style.animationDuration = (Math.random() * 5 + 5) + 's';
+        column.style.animationDelay = Math.random() * 5 + 's';
+        
+        // Create random characters
+        const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        let text = '';
+        for (let j = 0; j < 20; j++) {
+            text += chars[Math.floor(Math.random() * chars.length)] + '<br>';
+        }
+        column.innerHTML = text;
+        
+        matrixContainer.appendChild(column);
+    }
+}
+
+createMatrixRain();
+
+/* Enhanced Particle System */
+function createEnhancedParticles() {
+    const container = document.getElementById('particleContainer');
+    const particleCount = 80;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 8 + 's';
+        particle.style.animationDuration = (8 + Math.random() * 4) + 's';
+        
+        // Random colors and sizes
+        const colors = ['#ffcc00', '#ff0000', '#ff6600', '#ffffff'];
+        const size = Math.random() * 3 + 1;
+        particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        particle.style.boxShadow = `0 0 ${size * 2}px ${particle.style.background}`;
+        
+        container.appendChild(particle);
+    }
+}
+
+createEnhancedParticles();
+
+/* Particle Explosion Effect */
+function createParticleExplosion(x, y) {
+    const explosion = document.createElement('div');
+    explosion.className = 'particle-explosion';
+    explosion.style.left = x + 'px';
+    explosion.style.top = y + 'px';
+    
+    const particleCount = 20;
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'explosion-particle';
+        
+        const angle = (Math.PI * 2 * i) / particleCount;
+        const velocity = Math.random() * 100 + 50;
+        const vx = Math.cos(angle) * velocity;
+        const vy = Math.sin(angle) * velocity;
+        
+        particle.style.setProperty('--x', vx + 'px');
+        particle.style.setProperty('--y', vy + 'px');
+        
+        // Random colors
+        const colors = ['#ffcc00', '#ff0000', '#ff6600'];
+        particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+        
+        explosion.appendChild(particle);
+    }
+    
+    document.body.appendChild(explosion);
+    setTimeout(() => explosion.remove(), 1000);
+}
+
+/* Enhanced Click Effects */
+document.addEventListener('click', (e) => {
+    if (e.target.closest('a') || e.target.closest('button')) return;
+    createParticleExplosion(e.clientX, e.clientY);
+});
+
+/* Enhanced Skill Progress Animation */
+function animateSkillProgress() {
+    const skillBars = document.querySelectorAll('.skill-progress');
+    
+    skillBars.forEach((bar, index) => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        bar.style.setProperty('--skill-width', width);
+        
+        setTimeout(() => {
+            bar.style.animation = 'skill-progress-fill 2s ease-out forwards';
+        }, index * 200);
+    });
+}
+
+/* Trigger skill animation when skills section is visible */
+const skillsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateSkillProgress();
+            skillsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+
+const skillsSection = document.getElementById('skills');
+if (skillsSection) {
+    skillsObserver.observe(skillsSection);
+}
+
+/* Enhanced Section Animations */
+function handleScrollAnimations() {
+    const sections = document.querySelectorAll('.section');
+    const navDots = document.querySelectorAll('.nav-dot');
+    
+    const observerOptions = {
+        threshold: 0.3,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                
+                // Update active nav dot
+                const sectionId = entry.target.id;
+                navDots.forEach((dot, index) => {
+                    dot.classList.remove('active');
+                    const sections = ['hero', 'about', 'skills', 'projects', 'training', 'certificates', 'achievements', 'education', 'contact'];
+                    if (sections[index] === sectionId) {
+                        dot.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+    
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+}
+
+handleScrollAnimations();
+
+/* Interactive Navigation Dots */
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+/* Live Clock */
+function updateTime() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString('en-US', { 
+        hour12: false, 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit' 
+    });
+    const timeElement = document.querySelector('.time-blink');
+    if (timeElement) {
+        timeElement.textContent = timeString;
+    }
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+
+/* Enhanced Smooth Scrolling */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+/* Interactive Skill Cards */
+document.querySelectorAll('.skill-card').forEach(card => {
+    card.addEventListener('click', function() {
+        // Add pulse effect on click
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 200);
+        
+        // Create mini explosion at card center
+        const rect = this.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        createParticleExplosion(centerX, centerY);
+    });
+});
+
+/* Resume Download */
+document.getElementById('resumeBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Create a sample resume download
+    const resumeContent = `UTKARSH SRIVASTAVA
+AI & Full-Stack Developer
+
+📧 utkarsh48lpu@gmail.com
+📱 +91-7667479746
+🔗 www.linkedin.com/in/utkarsh-srivastava-3a0778282
+💻 github.com/drax102
+
+SUMMARY
+Passionate AI & Full-Stack Developer with expertise in Python, C++, 
+web development, and cloud architecture. Building intelligent systems 
+and scalable applications.
+
+SKILLS
+• Languages: C++, C, Python, Java
+• Frameworks: HTML5, CSS3, Node.js, React.js, Express.js, REST APIs
+• Tools: MySQL, VS Code, Git & GitHub, Linux, Apache, AWS, Figma
+• AI/ML: Speech Recognition, OS Automation, NLP, Browser Automation
+
+PROJECTS
+• AmmoNation - Global Firearms Classification Website
+• AI Assistant Developer - Voice & Text Controlled Assistant
+
+EDUCATION
+• B.Tech Computer Science - Lovely Professional University
+• DSA Training - LPU (Grade A)
+
+CERTIFICATIONS
+• AWS Cloud Architecting
+• Oracle Cloud Infrastructure Foundations
+• Oracle AI Foundations
+• Oracle Data Platform Foundations
+• DSA using C++
+
+ACHIEVEMENTS
+• 5-Star Python Rating - HackerRank
+• 5-Star C++ Rating - HackerRank`;
+    
+    const blob = new Blob([resumeContent], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Utkarsh_Srivastava_Resume.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+});
+
+/* Enhanced Form Validation */
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const formMsg = document.getElementById('formMsg');
+    
+    if (name && email && message) {
+        // Show success message with animation
+        formMsg.textContent = '✓ Message sent successfully! I\'ll get back to you soon.';
+        formMsg.style.color = 'var(--accent)';
+        formMsg.style.display = 'block';
+        formMsg.style.animation = 'fadeInUp 0.5s ease';
+        
+        // Create celebration explosion
+        const rect = this.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        createParticleExplosion(centerX, centerY);
+        
+        // Reset form
+        this.reset();
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            formMsg.style.animation = 'fadeOutDown 0.5s ease';
+            setTimeout(() => {
+                formMsg.style.display = 'none';
+            }, 500);
+        }, 5000);
+    } else {
+        formMsg.textContent = '✗ Please fill in all fields.';
+        formMsg.style.color = '#ff0000';
+        formMsg.style.display = 'block';
+        formMsg.style.animation = 'fadeInUp 0.5s ease';
+        
+        setTimeout(() => {
+            formMsg.style.animation = 'fadeOutDown 0.5s ease';
+            setTimeout(() => {
+                formMsg.style.display = 'none';
+            }, 500);
+        }, 3000);
+    }
+});
+
+/* Add fade animations */
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fadeOutDown {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    }
+`;
+document.head.appendChild(style);
+
+/* Enhanced Mouse Trail Effect */
+document.addEventListener('mousemove', (e) => {
+    if (Math.random() > 0.95) {
+        const particle = document.createElement('div');
+        particle.style.position = 'fixed';
+        particle.style.left = e.clientX + 'px';
+        particle.style.top = e.clientY + 'px';
+        particle.style.width = '6px';
+        particle.style.height = '6px';
+        particle.style.background = 'var(--accent)';
+        particle.style.borderRadius = '50%';
+        particle.style.pointerEvents = 'none';
+        particle.style.zIndex = '9999';
+        particle.style.animation = 'fadeOut 1s ease forwards';
+        particle.style.boxShadow = `0 0 10px var(--accent)`;
+        document.body.appendChild(particle);
+        
+        setTimeout(() => {
+            particle.remove();
+        }, 1000);
+    }
+});
+
+// Add fadeOut animation
+const fadeOutStyle = document.createElement('style');
+fadeOutStyle.textContent = `
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            transform: scale(0);
+        }
+    }
+`;
+document.head.appendChild(fadeOutStyle);
+
+</script>
+
+</body>
+</html>
