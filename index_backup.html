@@ -24,14 +24,14 @@
 
 <body>
 
-    <!-- Optimized Loading Screen -->
+    <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-content">
             <div class="loading-logo">UTKARSH</div>
             <div class="loading-bar">
                 <div class="loading-progress"></div>
             </div>
-            <div class="loading-text">Loading...</div>
+            <div class="loading-text">INITIALIZING CYBER INTERFACE...</div>
         </div>
     </div>
 
@@ -120,6 +120,10 @@
                 <!-- Resume Download Button -->
                 <div class="hero-actions">
                     <a href="#" class="cta-btn resume-btn" id="resumeBtn">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="#" class="cta-btn cv-btn" id="cvBtn">
                         <i class="fas fa-file-pdf"></i>
                         <span>Download CV</span>
                     </a>
@@ -186,14 +190,6 @@
                 </div>
             </section>
 
-            <!-- Image Modal -->
-            <div id="imageModal" class="image-modal">
-                <div class="image-modal-content">
-                    <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
-                    <img id="modalImage" src="" alt="Enlarged Profile">
-                </div>
-            </div>
-
             <section id="skills" class="section">
                 <h3 class="section-title">TECHNICAL_SKILLS</h3>
                 <div class="skills-grid">
@@ -255,7 +251,7 @@
                 <div class="certificates-grid">
                     <div class="certificate-card" onclick="showCertificateModal('AWS Cloud Architecting', 'AWS', 'Jan\' 26', 'Training Badge', 'Completed comprehensive AWS cloud architecture training covering services, deployment, security, and best practices for enterprise solutions.')">
                         <div class="certificate-preview">
-                            <img src="certificates/aws-certificate.jpg" alt="AWS Certificate" class="certificate-image">
+                            <img src="https://via.placeholder.com/300x200/ffcc00/0a0a0a?text=AWS+Certificate" alt="AWS Certificate" class="certificate-image">
                             <div class="certificate-overlay">
                                 <i class="fas fa-search-plus"></i>
                                 <span>View Details</span>
@@ -269,7 +265,7 @@
                     </div>
                     <div class="certificate-card" onclick="showCertificateModal('Cloud Infrastructure 2025 Certified Foundations Associate', 'Oracle', 'Oct\' 25', 'Foundations Associate', 'Completed Oracle Cloud Infrastructure 2025 Foundations certification demonstrating fundamental knowledge of cloud services, architecture, and deployment strategies.')">
                         <div class="certificate-preview">
-                            <img src="certificates/oracle-cloud-certificate.jpg" alt="Oracle Cloud Certificate" class="certificate-image">
+                            <img src="https://via.placeholder.com/300x200/ff6600/0a0a0a?text=Oracle+Cloud+Certificate" alt="Oracle Cloud Certificate" class="certificate-image">
                             <div class="certificate-overlay">
                                 <i class="fas fa-search-plus"></i>
                                 <span>View Details</span>
@@ -283,7 +279,7 @@
                     </div>
                     <div class="certificate-card" onclick="showCertificateModal('Cloud Infrastructure 2025 Certified AI Foundations Associate', 'Oracle', 'Oct\' 25', 'AI Foundations Associate', 'Achieved Oracle Cloud Infrastructure 2025 AI Foundations certification, showcasing expertise in AI services, machine learning, and intelligent automation on cloud platforms.')">
                         <div class="certificate-preview">
-                            <img src="certificates/oracle-ai-certificate.jpg" alt="Oracle AI Certificate" class="certificate-image">
+                            <img src="https://via.placeholder.com/300x200/ff0000/0a0a0a?text=Oracle+AI+Certificate" alt="Oracle AI Certificate" class="certificate-image">
                             <div class="certificate-overlay">
                                 <i class="fas fa-search-plus"></i>
                                 <span>View Details</span>
@@ -297,7 +293,7 @@
                     </div>
                     <div class="certificate-card" onclick="showCertificateModal('Data Platform 2025 Certified Foundations Associate', 'Oracle', 'Oct\' 25', 'Data Platform Foundations Associate', 'Earned Oracle Data Platform 2025 Foundations certification, validating skills in data management, analytics, and cloud data solutions.')">
                         <div class="certificate-preview">
-                            <img src="certificates/oracle-data-certificate.jpg" alt="Oracle Data Certificate" class="certificate-image">
+                            <img src="https://via.placeholder.com/300x200/ffcc00/0a0a0a?text=Oracle+Data+Certificate" alt="Oracle Data Certificate" class="certificate-image">
                             <div class="certificate-overlay">
                                 <i class="fas fa-search-plus"></i>
                                 <span>View Details</span>
@@ -311,7 +307,7 @@
                     </div>
                     <div class="certificate-card" onclick="showCertificateModal('Basics of DSA using CPP', 'IamNeo', 'Jul\' 25', 'DSA', 'Completed comprehensive training in Data Structures and Algorithms using C++, covering arrays, linked lists, trees, sorting, searching, and algorithmic problem-solving techniques.')">
                         <div class="certificate-preview">
-                            <img src="certificates/dsa-certificate.jpg" alt="DSA Certificate" class="certificate-image">
+                            <img src="https://via.placeholder.com/300x200/ff6600/0a0a0a?text=DSA+Certificate" alt="DSA Certificate" class="certificate-image">
                             <div class="certificate-overlay">
                                 <i class="fas fa-search-plus"></i>
                                 <span>View Details</span>
@@ -520,46 +516,6 @@
     </div>
 
     <script>
-        // Image Modal Functions
-        function openImageModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            modalImage.src = imageSrc;
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeImageModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Profile Image Click Handler
-        document.addEventListener('DOMContentLoaded', function() {
-            const profileImage = document.getElementById('profileImage');
-            if (profileImage) {
-                profileImage.addEventListener('click', function() {
-                    openImageModal(this.src);
-                });
-            }
-
-            // Close modal on outside click
-            const modal = document.getElementById('imageModal');
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    closeImageModal();
-                }
-            });
-
-            // Close modal on ESC key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    closeImageModal();
-                }
-            });
-        });
-
         // Interactive Navigation System
         document.addEventListener('DOMContentLoaded', function() {
             // Active navigation highlighting
@@ -636,7 +592,7 @@
             const loadingScreen = document.getElementById('loadingScreen');
             setTimeout(() => {
                 loadingScreen.classList.add('hidden');
-            }, 500); // Super fast loading - 500ms
+            }, 2000);
         });
 
         /* Clean Particle System */
@@ -763,7 +719,7 @@ ACHIEVEMENTS
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'PORTFOLIO/utkarsh_CV_Template_Latest[1].pdf';
+            a.download = 'Utkarsh_Srivastava_Resume.txt';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -827,19 +783,140 @@ ACHIEVEMENTS
         `;
         document.head.appendChild(style);
 
-        // Resume Download
-        document.getElementById('resumeBtn').addEventListener('click', function (e) {
-            e.preventDefault();
-            // Download the actual CV PDF file
-            const cvPath = 'D:/project 3 pep/PORTFOLIO/utkarsh_CV_Template_Latest[1].pdf';
+        // CV Download Functions
+        function downloadResume() {
+            const resumeContent = `UTKARSH SRIVASTAVA
+AI & Full-Stack Developer
+
+utkarsh48lpu@gmail.com
++91-7667479746
+www.linkedin.com/in/utkarsh-srivastava-3a0778282
+github.com/drax102
+
+SUMMARY
+Passionate AI & Full-Stack Developer with expertise in Python, C++, 
+web development, and cloud architecture. Building intelligent systems 
+and scalable applications.
+
+SKILLS
+• Languages: C++, C, Python, Java
+• Frameworks: HTML5, CSS3, Node.js, React.js, Express.js, REST APIs
+• Tools: MySQL, VS Code, Git & GitHub, Linux, Apache, AWS, Figma
+• AI/ML: Speech Recognition, OS Automation, NLP, Browser Automation
+
+PROJECTS
+• AmmoNation - Global Firearms Classification Website
+• AI Assistant Developer - Voice & Text Controlled Assistant
+
+EDUCATION
+• B.Tech Computer Science - Lovely Professional University
+• DSA Training - LPU (Grade A)
+
+CERTIFICATIONS
+• AWS Cloud Architecting
+• Oracle Cloud Infrastructure Foundations
+• Oracle AI Foundations
+• Oracle Data Platform Foundations
+• DSA using C++
+
+ACHIEVEMENTS
+• 5-Star Python Rating - HackerRank
+• 5-Star C++ Rating - HackerRank`;
+            const blob = new Blob([resumeContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
-            a.href = cvPath;
-            a.download = 'Utkarsh_Srivastava_CV.pdf';
-            a.style.display = 'none';
+            a.href = url;
+            a.download = 'Utkarsh_Srivastava_Resume.txt';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
-        });
+            window.URL.revokeObjectURL(url);
+        }
+
+        function downloadCV() {
+            const cvContent = `UTKARSH SRIVASTAVA
+PROFESSIONAL CV
+
+utkarsh48lpu@gmail.com
++91-7667479746
+www.linkedin.com/in/utkarsh-srivastava-3a0778282
+github.com/drax102
+
+PROFESSIONAL SUMMARY
+Experienced AI & Full-Stack Developer with expertise in Python, C++, 
+web development, and cloud architecture. Passionate about building 
+intelligent systems and scalable applications.
+
+CORE COMPETENCIES
+• Languages: C++, C, Python, Java
+• Frameworks: HTML5, CSS3, Node.js, React.js, Express.js, REST APIs
+• Tools: MySQL, VS Code, Git & GitHub, Linux, Apache, AWS, Figma
+• AI/ML: Speech Recognition, OS Automation, NLP, Browser Automation
+
+PROFESSIONAL EXPERIENCE
+• AI Assistant Developer - Voice & Text Controlled Assistant
+• AmmoNation - Global Firearms Classification Website
+• Full-Stack Web Development
+• Cloud Architecture & Deployment
+
+EDUCATION
+• B.Tech Computer Science - Lovely Professional University
+• DSA Training - LPU (Grade A)
+
+CERTIFICATIONS
+• AWS Cloud Architecting
+• Oracle Cloud Infrastructure Foundations
+• Oracle AI Foundations
+• Oracle Data Platform Foundations
+• DSA using C++
+
+ACHIEVEMENTS
+• 5-Star Python Rating - HackerRank
+• 5-Star C++ Rating - HackerRank
+
+SKILLS SUMMARY
+• Programming: C++, C, Python, Java (Expert)
+• Web Technologies: HTML5, CSS3, JavaScript, React.js, Node.js (Advanced)
+• Cloud Platforms: AWS, Oracle Cloud (Proficient)
+• Database: MySQL, Data Structures & Algorithms (Strong)
+• AI/ML: Speech Recognition, NLP, OS Automation (Intermediate)
+• Tools: Git, VS Code, Linux, Apache, Figma (Expert)
+
+PROJECTS HIGHLIGHTS
+• AI Assistant: Voice and text-controlled system with Python/PHP backend
+• AmmoNation: Interactive educational website with advanced CSS animations
+• Cloud Solutions: Scalable web applications with modern architecture
+
+REFERENCES
+Available upon request
+
+${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;
+            
+            const blob = new Blob([cvContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Utkarsh_Srivastava_CV.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        // CV Download Function - Make sure button exists
+        const cvBtn = document.getElementById('cvBtn');
+        if (cvBtn) {
+            console.log('CV button found!'); // Debug log
+            cvBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('CV button clicked!'); // Debug log
+                alert('CV Download Started! Check your downloads folder.'); // Visual feedback
+                downloadCV();
+            });
+        } else {
+            console.log('CV button not found'); // Debug log
+            alert('CV button not found - please check HTML');
+        }
 
         // Certificate Modal Function
         function showCertificateModal(title, issuer, date, badge, description) {
